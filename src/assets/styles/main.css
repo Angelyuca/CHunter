@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,500,600,700,800&display=swap');
+@import "reset.css";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
