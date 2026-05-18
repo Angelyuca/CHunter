@@ -26,6 +26,9 @@ import SideMenu from "@/components/sideMenu.vue";
     background-color: #ffffff;
     border: 2px solid #FF8F0F;
     box-shadow: 0 0 20px 0 #FF4900;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
   }
 }
 </style>
