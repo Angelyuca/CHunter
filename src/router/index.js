@@ -30,6 +30,18 @@ const router = createRouter({
         {
           path: 'offers',
           name: 'offers',
+        },
+        {
+          path: 'profile',
+          name: 'profile',
+        },
+        {
+          path: 'faq',
+          name: 'faq',
+        },
+        {
+          path: 'news',
+          name: 'news',
         }
       ]
     },

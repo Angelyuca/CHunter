@@ -8,6 +8,7 @@ import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
 import {definePreset} from '@primeuix/themes';
 import "primeflex/primeflex.scss";
+import 'primeicons/primeicons.css'
 
 import App from './App.vue'
 import router from './router'
@@ -62,6 +63,8 @@ const Noir = definePreset(Aura, {
 
 import Button from "primevue/button"
 import InputText from 'primevue/inputtext';
+import Popover from 'primevue/popover';
+
 
 const app = createApp(App)
 
@@ -75,6 +78,7 @@ app.use(PrimeVue, {
 });
 app.component('Button', Button);
 app.component('InputText', InputText);
+app.component('Popover', Popover);
 
 app.mount('#app')
 

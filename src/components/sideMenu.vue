@@ -12,6 +12,15 @@
           </router-link>
         </li>
       </ul>
+
+      <ul>
+        <li v-for="item in menuBottom" :key="item.url" class="menu-bottom">
+          <router-link :to="{name: item.url}" class="item-menu">
+            <img class="icon" alt="" :src="item.icon">
+            <span class="name">{{ item.name }}</span>
+          </router-link>
+        </li>
+      </ul>
     </nav>
   </div>
 </template>
@@ -26,6 +35,11 @@ const menuTop = computed(() => [
   {name: i18n.global.t('t.menu.promo'), url: "promo", icon: "images/icons/promo.svg"},
   {name: i18n.global.t('t.menu.offers'), url: "offers", icon: "images/icons/shop.svg"},
 ])
+const menuBottom = computed(() => [
+  {name: i18n.global.t('t.menu.profile'), url: "profile", icon: "/images/icons/profile.svg"},
+  {name: i18n.global.t('t.menu.faq'), url: "faq", icon: "images/icons/question.svg"},
+  {name: i18n.global.t('t.menu.news'), url: "news", icon: "images/icons/document-grey.svg"},
+])
 
 </script>
 
@@ -33,28 +47,40 @@ const menuTop = computed(() => [
 <style scoped>
 .sidebar {
   padding: 40px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
 
   .logo {
     width: 180px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 110px;
 
     img {
       width: 100%;
     }
   }
 }
-
+a {
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
 .item-menu {
   display: flex;
   align-items: center;
   height: 44px;
   position: relative;
-  margin-top: 16px;
+  margin-bottom: 16px;
   text-decoration: none;
   padding: 10px 16px;
   border-radius: 100px;
   transition: all 0.3s;
+  border: 1px solid transparent;
 
   .name {
     font-size: 16px;
@@ -73,11 +99,26 @@ const menuTop = computed(() => [
   &.router-link-active {
     border: 1px solid #6A260A;
     background-color: #401C0D;
+
     .icon {
       filter: brightness(0) invert(35%) sepia(87%) saturate(4612%) hue-rotate(354deg) brightness(98%) contrast(106%);
     }
-    .name{
+
+    .name {
       color: var(--primary-color);
+    }
+  }
+}
+.menu-bottom {
+  .item-menu {
+    .name {
+      color: #636363;
+    }
+
+    &.router-link-active {
+      .name {
+        color: var(--primary-color);
+      }
     }
   }
 }

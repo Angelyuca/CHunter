@@ -1,12 +1,11 @@
 <script setup>
 
+import Header from "@/components/header.vue";
 </script>
 
 <template>
   <div class="work-space">
-    <div style="margin-bottom: 24px">
-      <h3>Welcome, Jennifer Lucas!</h3>
-    </div>
+    <Header title="Welcome, Jennifer Lucas!"/>
     <div class="block" style="margin-bottom: 16px">
       <div class="block__title">General info</div>
       <div class="block__info">
@@ -29,7 +28,7 @@
 
 <style scoped lang="scss">
 .block {
-  background-color: #EFEDEC;
+  background-color: var(--Neutral-50);
   width: 100%;
   border-radius: 20px;
   padding: 24px;
@@ -40,6 +39,7 @@
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 16px;
+    line-height: 24px;
   }
 
   &__info {
