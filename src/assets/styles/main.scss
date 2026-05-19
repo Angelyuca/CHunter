@@ -47,9 +47,10 @@ body {
 }
 
 .ch-popover.p-popover {
-  top: 96px!important;
-  border-color: #FF490029!important;
-  border-radius: 20px!important;
+  top: 96px !important;
+  border-color: #FF490029 !important;
+  border-radius: 20px !important;
+
   &:before, &:after {
     content: none !important;
   }
