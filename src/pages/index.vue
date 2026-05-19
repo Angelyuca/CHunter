@@ -5,7 +5,7 @@ import SideMenu from "@/components/sideMenu.vue";
 <template>
   <div class="main">
     <SideMenu/>
-    <div class="work-space">
+    <div class="page-block">
       <router-view></router-view>
     </div>
   </div>
@@ -18,7 +18,7 @@ import SideMenu from "@/components/sideMenu.vue";
   display: flex;
   overflow: hidden;
 
-  .work-space{
+  .page-block{
     width: 100%;
     margin: 20px 20px 20px 0;
     padding: 32px;

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="container">
+  <div class="work-space">
     <div style="margin-bottom: 24px">
       <h3>Welcome, Jennifer Lucas!</h3>
     </div>
@@ -16,7 +16,6 @@
         </div>
       </div>
     </div>
-
     <div class="block test">
       <div class="block__title">Top Offers</div>
 
@@ -29,11 +28,6 @@
 </template>
 
 <style scoped lang="scss">
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .block {
   background-color: #EFEDEC;
   width: 100%;

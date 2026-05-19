@@ -18,6 +18,18 @@ const router = createRouter({
           path: 'overviews',
           name: 'overviews',
           component: OverviewsPage,
+        },
+        {
+          path: 'statistics',
+          name: 'statistics',
+        },
+        {
+          path: 'promo',
+          name: 'promo',
+        },
+        {
+          path: 'offers',
+          name: 'offers',
         }
       ]
     },
