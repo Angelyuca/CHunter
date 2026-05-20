@@ -64,6 +64,10 @@ const Noir = definePreset(Aura, {
 import Button from "primevue/button"
 import InputText from 'primevue/inputtext';
 import Popover from 'primevue/popover';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import ColumnGroup from 'primevue/columngroup';
+import Row from 'primevue/row';
 
 
 const app = createApp(App)
@@ -79,6 +83,11 @@ app.use(PrimeVue, {
 app.component('Button', Button);
 app.component('InputText', InputText);
 app.component('Popover', Popover);
+app.component('DataTable', DataTable)
+app.component('Column', Column)
+app.component('ColumnGroup', ColumnGroup)
+app.component('Row', Row)
+
 
 app.mount('#app')
 
